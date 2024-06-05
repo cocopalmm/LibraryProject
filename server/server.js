@@ -29,7 +29,7 @@ mongoose.connection.on('disconnected', () => {
 });
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // 클라이언트 url
+  origin: 'http://43.203.221.238:3000', // 클라이언트 url
   credentials: true, // 자격 증명 허용
 };
 
