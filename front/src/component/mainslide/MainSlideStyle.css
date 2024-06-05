@@ -1,0 +1,65 @@
+.swiper-wrapper {
+  height: 100vh;
+  background: #eee;
+  font-size: 12px; /* 폰트 크기 줄임 */
+  color: #000;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%; /* 높이를 100%로 설정 */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 16px; /* 폰트 크기 줄임 */
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 20px); /* 높이를 줄임 */
+  padding: 5px; /* 슬라이드 내부 여백 줄임 */
+  box-sizing: border-box; /* 패딩 포함한 박스 크기 계산 */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 70%; /* 너비를 줄임 */
+  height: auto; /* 높이를 자동으로 조정 */
+  max-height: 50vh; /* 최대 높이를 줄임 */
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 8px; /* 여백 줄임 */
+  bottom: 8px; /* 여백 줄임 */
+  z-index: 10;
+  width: 36px; /* 크기 줄임 */
+  height: 36px; /* 크기 줄임 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 3px; /* 크기 줄임 */
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(113.1px * (1 - var(--progress))); /* 계산 값 수정 */
+  stroke-dasharray: 113.1; /* 계산 값 수정 */
+  transform: rotate(-90deg);
+}

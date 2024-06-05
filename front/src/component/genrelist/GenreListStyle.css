@@ -1,0 +1,72 @@
+.genre-button-wrapper {
+  margin-right: 530px;
+  margin-bottom: -20px;
+}
+
+.genre-button-wrapper li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 6px 16px;
+  display: inline-block;
+  border: 1px solid #242424;
+  border-radius: 100px;
+}
+
+.genre-button-wrapper li.selected {
+  background-color: black;
+  color: white;
+}
+
+.genre-list {
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.genre-list.fade-out {
+  opacity: 0;
+}
+
+.genre-list.fade-in {
+  opacity: 1;
+}
+
+.genre-item {
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.genre-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.genre-title > h1 {
+  font-size: 18px;
+  color: #444;
+}
+
+.genre-title > h2 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust based on your layout */
+  width: 100%;
+}
