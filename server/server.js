@@ -29,8 +29,8 @@ mongoose.connection.on('disconnected', () => {
 });
 
 const corsOptions = {
-  origin: 'http://43.203.221.238:3000', // 클라이언트 url
-  credentials: true, // 자격 증명 허용
+  origin: 'http://13.124.194.227:3000',
+  credentials: true,
 };
 
 app.use(express.json());

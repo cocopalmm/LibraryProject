@@ -26,10 +26,13 @@
     "swiper": "^11.1.3",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.20.1"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "node --max-old-space-size=8192 $(which react-scripts) start",
+    "build": "node --max-old-space-size=8192 $(which react-scripts) build",
+    "test": "node --max-old-space-size=8192 $(which react-scripts) test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
